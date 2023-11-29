@@ -1,0 +1,71 @@
+/*--common--*/
+body, html {
+    height: 100%;
+    margin: 0;
+}
+/* Font for title:CHINESE TOURISM */
+h1 {
+    font-family: 'Nova Flat';
+}
+/* Font for tagline: Welcome to China */
+h2 {
+    font-family: 'Sofia';
+}
+/* logo */
+.brand img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 15);
+    height: auto;
+}
+/*set the style for navbar*/
+.navbar-nav{
+    border: 2px solid #a1a1a1;
+	border-radius: 20px;
+}
+/* Font for navbar */
+.navbar-nav{
+    font-size: 25px; 
+    font-family: 'Open Sans', sans-serif;
+  }
+/* set for background style */
+body{
+  background-image: url("../image/Chinesepicture1.jpg");
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  background-size: cover; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Font for footer */
+footer {
+    font-family: 'Nova Flat';
+}
+/*responsive design*/
+/* Adjustments for small screens */
+@media (max-width: 767px) {
+
+}
+/* Adjustments for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+ /* Adjustments for large screens */
+@media (min-width: 992px) {
+   
+}
+
+/*--index--*/
+/*click an image, show some text relating to that image.*/
+#text{
+    font-family: 'Sofia';
+}
+/*set the style for image*/
+.col-sm-4 img{
+    border:2px solid #a1a1a1;
+    border-radius:25px;
+}
+

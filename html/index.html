@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Chinese Tourism</title>
+        <!-- Set the viewport property of the web page -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google font: 4 sorts -->
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel='stylesheet'href="https://fonts.googleapis.com/css?family=Nova Flat">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel='stylesheet'href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300'>
+        <!-- Link to external CSS file -->
+        <link href="../css/style.css" rel="stylesheet">
+       <!-- This script tag loads the jQuery-3.7.1 library from the provided URL -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- Bootstrap-5.2.3 CSS and JS library -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">  
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    </head>
+    <body>
+        <header >
+            <!-- Title -->
+            <h1 class="container text-center my-4 display-4">CHINESE TOURISM</h1>
+            <!-- Logo -->
+            <a class="brand"  href="index.html"><img src="../image/logo1.0.png" alt="Logo"></a>
+            <!-- Navigation Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light mx-auto">
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html">Info</a></li>
+                        <li class="nav-item"><a class="nav-link" href="service.html">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="questions.html">Questions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game.html">Game</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+       <!--Main content -->
+        <main class="container text-center mt-4 ">
+             <!-- tagline -->
+             <h2 class="display-6">Welcome to China</h2>
+            <!-- Image Gallery -->
+            <div class="row text-center mt-3">
+                <div class="col-sm-4 mb-3"><img src="../image/xinjiang.jpg" class="img-fluid" onclick="showText('xinjiang')"></div>
+                <div class="col-sm-4 mb-3"><img src="../image/qinghai.jpg" class="img-fluid" onclick="showText('qinghai')"></div>
+                <div class="col-sm-4 mb-3"><img src="../image/hnu.jpg" class="img-fluid" onclick="showText('hnu')"></div>
+                <div class="col-sm-4 mb-3"><img src="../image/yuelu.jpg" class="img-fluid" onclick="showText('yuelu')"></div>
+                <div class="col-sm-4 mb-3"><img src="../image/shenzhen.jpg" class="img-fluid" onclick="showText('shenzhen')"></div>
+                <div class="col-sm-4 mb-3"><img src="../image/wusong.jpg" class="img-fluid" onclick="showText('wusong')"></div>
+            </div>
+            <!-- click an image, show some text relating to that image-->
+            <div id="text"></div>
+        </main>
+        <!-- Footer -->
+        <footer class="text-center py-3">All rights reserved © www.58pic.com</footer>
+        <!-- Link to external JavaScript file -->
+        <script src="../javascript/script.js"></script>
+    </body>
+</html>
