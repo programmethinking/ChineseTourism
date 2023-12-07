@@ -69,6 +69,7 @@ footer {
     border-radius:25px;
 }
 
+
 /* -----------end------------------------------------ */
 
 /*Wang  set the style for cards in info page*/
@@ -92,5 +93,86 @@ footer {
     padding: 15px;
     margin-bottom: 15px;
     background-color: #f2f2f2;
+}
+
+
+/*--Questions--*/
+/*set the style for question boxes*/
+.questions-container {
+    width: 88%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*set the style for question*/
+.questions {
+    background: #ffffff;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto';
+    text-align: left;
+    width: 48%;
+}
+/*set the style for question title*/
+.questions h3 {
+    font-family: 'Sofia';
+    color: #0056b3;
+    text-align: center;
+}
+/*Set a separate style for the last question*/
+.questions:last-child {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+/*new background color when hovered on the question boxes*/
+.questions:hover {
+    background-color: rgb(239, 250, 249);
+}
+/*Set the style for the feedback form*/
+#feedback-form button{
+    margin-top: 10px;
+}
+#feedback-form-container {
+    width: 88%;
+}
+#feedback-form-container h3 {
+    font-family: 'Sofia';
+    color: #0056b3;
+    text-align: center;
+}
+
+/*--Contact--*/
+/*set the style for the contact information table*/
+.contact-table {
+    margin: 30px auto;
+    font-family: 'Roboto';
+    border-collapse: separate;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(101, 100, 100, 0.5);
+}
+.contact-table td,
+th {
+    padding: 10px;
+    vertical-align: middle;
+}
+/*set the style for the map*/
+.contact-map iframe {
+    margin-top: 30px;
+    width: 65%;
+    border: 2px solid #999494;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(101, 100, 100, 0.5);
+}
+/*set the style for social-media link in the table*/
+.contact-media a {
+    margin-right: 10px;
+}
+.contact-media img {
+    width: 5%;
+    height: auto;
 }
 
