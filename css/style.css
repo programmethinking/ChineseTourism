@@ -69,3 +69,28 @@ footer {
     border-radius:25px;
 }
 
+/* -----------end------------------------------------ */
+
+/*Wang  set the style for cards in info page*/
+.card-img-top{
+    width: 300px;
+    height: 300px;
+}
+
+/* Wang set the style for box for reviews */
+#reviews{
+    margin: 20px auto; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    padding-top: 15px; 
+    background-color:lightblue }
+
+/*Wang set the style for son boxes for customers' views  */
+.review-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f2f2f2;
+}
+
