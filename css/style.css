@@ -69,3 +69,18 @@ footer {
     border-radius:25px;
 }
 
+/*--game--*/
+/*adjust the size of textarea*/
+#comment-game {
+    min-height: 20vh; 
+    max-height: 50vh; 
+    resize: vertical; 
+}
+/*font of the tagline of game area*/
+#tagline-game{
+    font-family: 'Style Script';
+}
+/*font of the questions of game*/
+#question-game{
+    font-family: 'Roboto';
+}
