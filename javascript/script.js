@@ -36,6 +36,47 @@ function showText(image) {
 }
 
 
+// Wang  form validation of review page
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    alert("Thank you for your feedback！");
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+//Wang these are on click functions of info.html
+var $mottoCai = $("#mottoCai");
+$mottoCai.click(function(){
+    alert('"Wisdom is better than gold or silver."')
+})
+
+var $mottoYang = $("#mottoYang");
+$mottoYang.click(function(){
+    alert('"Nobody’s enemy but his own."')
+})
+
+var $mottoJiang = $("#mottoJiang");
+$mottoJiang.click(function(){
+    alert('"A bad workman always blames his tools."')
+})
+
+var $mottoWang = $("#mottoWang");
+$mottoWang.click(function(){
+    alert('"Grasp all, lose all."')
+})
+
+
 //--contact.html--//
 // hide and show the map
 $(document).ready(function(){
@@ -62,4 +103,5 @@ $(document).ready(function() {
     $('#question-input').val('');
   });
 });
+
 
