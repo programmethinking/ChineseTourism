@@ -35,7 +35,6 @@ function showText(image) {
     }
 }
 
-<<<<<<< HEAD
 
 // Wang  form validation of review page
 (function() {
@@ -105,7 +104,6 @@ $(document).ready(function() {
   });
 });
 
-=======
 //--game.html--//
 //alert box of game.html
 $(document).ready(function() {
@@ -194,7 +192,3 @@ $(document).ready(function () {
         $('#comment-game').val(''); // clear the form
         alert('Thank you for your comment！');
     });
-
-
->>>>>>> master
-
