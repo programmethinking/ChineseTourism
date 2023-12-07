@@ -35,5 +35,31 @@ function showText(image) {
     }
 }
 
-//
+
+//--contact.html--//
+// hide and show the map
+$(document).ready(function(){
+    $("#hide").click(function(){
+      $(".contact-map").hide();
+    });
+    $("#show").click(function(){
+      $(".contact-map").show();
+    });
+  });
+
+//--questions.html--//
+// feedback-form
+$(document).ready(function() {
+  $('#feedback-form').submit(function(event) {
+    event.preventDefault(); 
+    var userQuestion = $('#question-input').val(); 
+    if (userQuestion.length === 0) {
+      // If the input is empty, a message is displayed
+      $('#form-response-message').text('Please enter the question.').css('color', 'red');
+      return;
+    }
+    $('#form-response-message').text('Thank you for your submission and we will get back to you as soon as possible.').css('color', 'green');
+    $('#question-input').val('');
+  });
+});
 
