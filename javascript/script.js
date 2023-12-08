@@ -35,7 +35,7 @@ function showText(image) {
     }
 }
 
-
+//--review.html--//
 // Wang  form validation of review page
 (function() {
     'use strict';
@@ -55,6 +55,7 @@ function showText(image) {
     }, false);
 })();
 
+//--info.html--//
 //Wang these are on click functions of info.html
 var $mottoCai = $("#mottoCai");
 $mottoCai.click(function(){
@@ -114,7 +115,6 @@ $(document).ready(function() {
         alert("Let's play the game!");;
     }
 });
-
 // game area
 $(document).ready(function () {
     var questions = [
@@ -192,3 +192,57 @@ $(document).ready(function () {
         $('#comment-game').val(''); // clear the form
         alert('Thank you for your comment！');
     });
+
+    //--booking.html--//
+    //this is the form validation function of booking.html
+function submitAlert() {
+    // Reset error messages
+    document.getElementById("nameError").innerHTML = "";
+    document.getElementById("emailError").innerHTML = "";
+    document.getElementById("phoneError").innerHTML = "";
+    // Get values from form fields
+    var name = document.forms["Booking"]["name"].value;
+    var email = document.forms["Booking"]["email"].value;
+    var phone = document.forms["Booking"]["number"].value;
+    // Validate non-empty for name
+    if (name.trim() === "") {
+        document.getElementById("nameError").innerHTML = "Please enter your full name";
+        return false;
+    }
+    // Validate non-empty for email
+    if (email.trim() === "") {
+        document.getElementById("emailError").innerHTML = "Please enter your email address";
+        return false;
+    }
+    // Validate non-empty for phone
+    if (phone.trim() === "") {
+        document.getElementById("phoneError").innerHTML = "Please enter your phone number";
+        return false;
+    }
+    // Validate email format
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.match(emailRegex)) {
+        document.getElementById("emailError").innerHTML = "Please enter a valid email address";
+        return false;
+    }
+    // Validate phone format
+    var phoneRegex = /^\d{10}$/;
+    if (!phone.match(phoneRegex)) {
+        document.getElementById("phoneError").innerHTML = "Please enter a valid 10-digit phone number";
+        return false;
+    }
+    // If all validations pass, display success message
+    alert("Booking information submitted successfully!");
+    return false; // Prevent the default form submission behavior
+}
+//--service.html--//
+//this is on click function of service.html
+document.addEventListener("DOMContentLoaded", function () {
+    var services = document.querySelectorAll(".service");
+    services.forEach(function (service) {
+      service.addEventListener("click", function () {
+        var details = service.querySelector(".details");
+        details.style.display = details.style.display === "none" ? "block" : "none";
+      });
+    });
+  });
