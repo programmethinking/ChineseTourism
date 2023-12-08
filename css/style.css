@@ -68,17 +68,29 @@ footer {
     border:2px solid #a1a1a1;
     border-radius:25px;
 }
-
-<<<<<<< HEAD
-
+/*--game--*/
+/*adjust the size of textarea*/
+#comment-game {
+    min-height: 20vh; 
+    max-height: 50vh; 
+    resize: vertical; 
+}
+/*font of the tagline of game area*/
+#tagline-game{
+    font-family: 'Style Script';
+}
+/*font of the questions of game*/
+#question-game{
+    font-family: 'Roboto';
+}
 /* -----------end------------------------------------ */
-
+/*--info--*/
 /*Wang  set the style for cards in info page*/
 .card-img-top{
     width: 300px;
     height: 300px;
 }
-
+/*--review--*/
 /* Wang set the style for box for reviews */
 #reviews{
     margin: 20px auto; 
@@ -95,8 +107,7 @@ footer {
     margin-bottom: 15px;
     background-color: #f2f2f2;
 }
-
-
+/* -----------end------------------------------------ */
 /*--Questions--*/
 /*set the style for question boxes*/
 .questions-container {
@@ -145,7 +156,6 @@ footer {
     color: #0056b3;
     text-align: center;
 }
-
 /*--Contact--*/
 /*set the style for the contact information table*/
 .contact-table {
@@ -176,21 +186,102 @@ th {
     width: 5%;
     height: auto;
 }
+/* -----------end------------------------------------ */
+/*--booking--*/
+.Bookingform {
+    width: 100%;
+    min-height: 300px;
+    padding: 3%;
+    border: solid 2px black;
+    float: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Bookingform .left {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.Bookingform .right {
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+.Bookingform input[type="text"],
+.Bookingform textarea {
+    border: solid 1px #000000;
+    border-radius: 5px;
+    width: 75%;
+    padding: 5px;
+    font-size: 14px;
+}
+.Bookingform textarea {
+    height: 80%;
+    margin-bottom: 5%;
+    resize: none;
+}
+.submit {
+    width: 80px;
+    cursor: pointer;
+}
+.form-control {
+  text-align: center;
+}
+.form-select {
+  text-align-last: center;
+}
+.error {
+  color: red;
+  font-size: 14px;
+}
+.form-control.error {
+  border-color: red;
+}
 
-=======
-/*--game--*/
-/*adjust the size of textarea*/
-#comment-game {
-    min-height: 20vh; 
-    max-height: 50vh; 
-    resize: vertical; 
-}
-/*font of the tagline of game area*/
-#tagline-game{
-    font-family: 'Style Script';
-}
-/*font of the questions of game*/
-#question-game{
-    font-family: 'Roboto';
-}
->>>>>>> master
+/*--service--*/
+section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .service-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  .service {
+    flex: 0 1 calc(33.33% - 20px); 
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  .service:hover {
+    transform: scale(1.05);
+  }
+  .service img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  } 
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .service p {
+    font-size: 1rem;
+    color: #666;
+  }
+.service .details {
+    display: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
