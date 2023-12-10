@@ -1,4 +1,4 @@
-//--index.html--//
+//--index.html-- Mingxuan Cai//
 //this is a alert box of index.html
 $(document).ready(function() {
     var path = window.location.pathname;//get the path of the page
@@ -34,8 +34,7 @@ function showText(image) {
             text.innerHTML = '';
     }
 }
-
-//--review.html--//
+//--review.html-- Xin Wang//
 // Wang  form validation of review page
 (function() {
     'use strict';
@@ -54,31 +53,25 @@ function showText(image) {
         });
     }, false);
 })();
-
-//--info.html--//
+//--info.html-- Xin Wang//
 //Wang these are on click functions of info.html
 var $mottoCai = $("#mottoCai");
 $mottoCai.click(function(){
     alert('"Wisdom is better than gold or silver."')
 })
-
 var $mottoYang = $("#mottoYang");
 $mottoYang.click(function(){
     alert('"Nobody’s enemy but his own."')
 })
-
 var $mottoJiang = $("#mottoJiang");
 $mottoJiang.click(function(){
     alert('"A bad workman always blames his tools."')
 })
-
 var $mottoWang = $("#mottoWang");
 $mottoWang.click(function(){
     alert('"Grasp all, lose all."')
 })
-
-
-//--contact.html--//
+//--contact.html-- Liuying Yang//
 // hide and show the map
 $(document).ready(function(){
     $("#hide").click(function(){
@@ -89,7 +82,7 @@ $(document).ready(function(){
     });
   });
 
-//--questions.html--//
+//--questions.html--Liuying Yang //
 // feedback-form
 $(document).ready(function() {
   $('#feedback-form').submit(function(event) {
@@ -104,8 +97,7 @@ $(document).ready(function() {
     $('#question-input').val('');
   });
 });
-
-//--game.html--//
+//--game.html--Mingxuan Cai//
 //alert box of game.html
 $(document).ready(function() {
     var path = window.location.pathname;//get the path of the page
@@ -188,12 +180,17 @@ $(document).ready(function () {
 });
     //comment area
     $('#comment-form').submit(function (event) {
-        event.preventDefault();
-        $('#comment-game').val(''); // clear the form
-        alert('Thank you for your comment！');
+        var comment = $('#comment-game').val();
+        if(comment === '') {
+            alert('Please enter your comment');
+            event.preventDefault();
+        } else {
+            $('#comment-game').val(''); // clear the form
+            alert('Thank you for your comment！');
+        }
     });
-
-    //--booking.html--//
+    
+    //--booking.html-- Linfeng Jiang//
     //this is the form validation function of booking.html
 function submitAlert() {
     // Reset error messages
@@ -235,7 +232,7 @@ function submitAlert() {
     alert("Booking information submitted successfully!");
     return false; // Prevent the default form submission behavior
 }
-//--service.html--//
+//--service.html--Linfeng Jiang//
 //this is on click function of service.html
 document.addEventListener("DOMContentLoaded", function () {
     var services = document.querySelectorAll(".service");
@@ -246,3 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   });
+  /*Mingxuan Cai is in charge of index and game
+  Xin Wang is in charge of info and review
+ Liuying Yang is in charge of contact and question
+  Linfeng Jiang is in charge of service and booking*/

@@ -1,4 +1,4 @@
-/*--common--*/
+/*--common-- Mingxuan Cai*/
 body, html {
     height: 100%;
     margin: 0;
@@ -58,7 +58,7 @@ footer {
    
 }
 
-/*--index--*/
+/*--index-- Mingxuan Cai*/
 /*click an image, show some text relating to that image.*/
 #text{
     font-family: 'Sofia';
@@ -68,7 +68,7 @@ footer {
     border:2px solid #a1a1a1;
     border-radius:25px;
 }
-/*--game--*/
+/*--game-- Mingxuan Cai*/
 /*adjust the size of textarea*/
 #comment-game {
     min-height: 20vh; 
@@ -84,13 +84,13 @@ footer {
     font-family: 'Roboto';
 }
 /* -----------end------------------------------------ */
-/*--info--*/
+/*--info--Xin Wang*/
 /*Wang  set the style for cards in info page*/
 .card-img-top{
     width: 300px;
     height: 300px;
 }
-/*--review--*/
+/*--review--Xin Wang*/
 /* Wang set the style for box for reviews */
 #reviews{
     margin: 20px auto; 
@@ -108,7 +108,7 @@ footer {
     background-color: #f2f2f2;
 }
 /* -----------end------------------------------------ */
-/*--Questions--*/
+/*--Questions--Yang Liuying*/
 /*set the style for question boxes*/
 .questions-container {
     width: 88%;
@@ -156,7 +156,7 @@ footer {
     color: #0056b3;
     text-align: center;
 }
-/*--Contact--*/
+/*--Contact--Yang Liuying*/
 /*set the style for the contact information table*/
 .contact-table {
     margin: 30px auto;
@@ -187,7 +187,7 @@ th {
     height: auto;
 }
 /* -----------end------------------------------------ */
-/*--booking--*/
+/*--booking--Linfeng Jiang*/
 .Bookingform {
     width: 100%;
     min-height: 300px;
@@ -236,8 +236,7 @@ th {
 .form-control.error {
   border-color: red;
 }
-
-/*--service--*/
+/*--service--Linfeng Jiang*/
 section {
     max-width: 1200px;
     margin: 20px auto;
@@ -285,3 +284,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
+/*Mingxuan Cai is in charge of index and game
+  Xin Wang is in charge of info and review-->
+ Liuying Yang is in charge of contact and question
+  Linfeng Jiang is in charge of service and booking*/

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
+    <title>Chinese Tourism-Booking</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova Flat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova+Flat">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300">
     <link href="../css/style.css" rel="stylesheet">
@@ -15,7 +14,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../javascript/script.js"></script>
 </head>
-
 <body>
     <header class="container">
         <h1 class="text-center my-4 display-4">CHINESE TOURISM</h1>
@@ -39,28 +37,27 @@
             </div>
         </nav>
     </header>
-
     <main class="container text-center mt-4">
         <h2 class="booking">Please fill in the booking information</h2><br>
         <form id="Booking" class="row g-3" onsubmit="return submitAlert()" method="post">
             <div class="col-12 col-md-6">
                 <label for="name" class="form-label">Full Name:</label>
-                <input type="text" class="form-control" name="name" required="required" maxlength="30" />
+                <input type="text" id="name" class="form-control" name="name" required="required" maxlength="30" >
                 <span id="nameError" class="error"></span>
             </div>
             <div class="col-12 col-md-6">
                 <label for="email" class="form-label">Email Address:</label>
-                <input type="text" class="form-control" name="email" required="required" maxlength="24" />
+                <input type="text" id="email" class="form-control" name="email" required="required" maxlength="24" >
                 <span id="emailError" class="error"></span>
             </div>
             <div class="col-12 col-md-6">
                 <label for="phone" class="form-label">Phone Number:</label>
-                <input type="text" class="form-control" name="number" required="required" maxlength="10" />
+                <input type="text" id="phone" class="form-control" name="number" required="required" maxlength="10" >
                 <span id="phoneError" class="error"></span>
             </div>
             <div class="col-12 col-md-6">
                 <label for="address" class="form-label">Address:</label>
-                <input type="text" class="form-control" name="address" required="required" />
+                <input type="text" id="address" class="form-control" name="address" required="required" >
                 <span id="addressError" class="error"></span>
             </div>
             <div class="col-12 col-md-6">
@@ -92,8 +89,10 @@
             </div>
         </form>
     </main><br>
-
     <footer class="text-center py-3">All rights reserved © www.58pic.com</footer>
 </body>
-
 </html>
+<!--Mingxuan Cai is in charge of index and game-->
+<!--Xin Wang is in charge of info and review-->
+<!--Liuying Yang is in charge of contact and question-->
+<!--Linfeng Jiang is in charge of service and booking-->
