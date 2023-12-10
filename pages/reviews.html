@@ -61,7 +61,7 @@
           </div>
         </div>
           <!-- a validated form to collect customers feedback -->
-          <div class="container">
+        <div class="container">
             <h2>Your feedback is cherished!</h2>
             <form action="" class="needs-validation" novalidate>
                 <div class="form-group">
@@ -93,8 +93,10 @@
                     <div class="invalid-feedback">Please select your country!</div>
                 </div>
                 <div class="form-group form-floating my-4">
-                    <textarea class="form-control form-control-lg border-secondary" placeholder="Leave a comment here"></textarea>
-                    <label for="comment">comment</label>
+                    <textarea class="form-control form-control-lg border-secondary" id="comment" placeholder="Leave a comment here" name="comment" required></textarea>
+                    <label for="comment">Comment</label>
+                    <div class="valid-feedback">Validated successfully！</div>
+                    <div class="invalid-feedback">Please enter your comment!</div>
                 </div>
                 <div class="form-group form-check mb-3">
                     <label class="form-check-label">
